@@ -85,35 +85,12 @@
         flex-direction: column !important;
         min-height: auto !important;
         gap: 0 !important;
-        padding: 24px 20px 48px !important;
+        padding: 20px 20px 48px !important;
       }
 
-      .hero-image {
-        order: -1 !important;
-        width: 100% !important;
-        min-height: 0 !important;
-        height: auto !important;
-        padding: 10px 0 24px !important;
-        margin: 0 !important;
-
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-
-        overflow: visible !important;
-      }
-
-      .hero-image .main-logo {
-        width: 110px !important;
-        max-width: 110px !important;
-        height: auto !important;
-        max-height: none !important;
-        aspect-ratio: auto !important;
-        object-fit: contain !important;
-        position: static !important;
-        margin: 0 auto !important;
-        display: block !important;
-        border-radius: 0 !important;
+      /* LOGO AUF HANDY AUSBLENDEN */
+      .hero-image.logo-area {
+        display: none !important;
       }
 
       .hero-copy {
@@ -388,11 +365,6 @@
         font-size: 48px !important;
       }
 
-      .hero-image .main-logo {
-        width: 96px !important;
-        max-width: 96px !important;
-      }
-
       .section {
         padding-left: 18px !important;
         padding-right: 18px !important;
@@ -451,9 +423,10 @@
       </h1>
 
       <p class="lead">
-        Mit <strong>MoveCode</strong>, dem Programm von Meyfarth-Gesundheitsprävention,
-        bringe ich wissenschaftlich fundiertes Gesundheitswissen in Ihr Unternehmen.
-        Verständliche Vorträge und praktische Workshops für einen bewegten Arbeitsalltag.
+        Mit <strong>MoveCode</strong>, dem Programm von
+        Meyfarth-Gesundheitsprävention, bringe ich wissenschaftlich fundiertes
+        Gesundheitswissen in Ihr Unternehmen. Verständliche Vorträge und
+        praktische Workshops für einen bewegten Arbeitsalltag.
       </p>
 
       <div class="actions">
@@ -483,7 +456,7 @@
     </div>
 
 
-    <!-- LOGO -->
+    <!-- LOGO NUR DESKTOP -->
 
     <div class="hero-image logo-area">
 
@@ -559,7 +532,6 @@
 
     <div class="cards two">
 
-
       <article class="card">
 
         <p class="index">
@@ -628,7 +600,7 @@
   </section>
 
 
-  <!-- MOVECODE -->
+  <!-- MOVECODE PROGRAMM -->
 
   <section id="movecode" class="section pale">
 
