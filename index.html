@@ -9,31 +9,72 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+    /* ===== LOGO IM HERO ===== */
+
     .logo-area {
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: visible;
-      min-height: 420px;
+      min-height: 320px;
     }
 
     .hero-image .main-logo {
-      width: 75% !important;
-      max-width: 430px !important;
+      width: 70% !important;
+      max-width: 380px !important;
       height: auto !important;
       object-fit: contain !important;
       position: static !important;
       display: block !important;
+      margin: 0 auto !important;
     }
 
+    /* ===== MOBILE ===== */
+
     @media (max-width: 900px) {
+
+      .hero {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        gap: 18px !important;
+      }
+
       .logo-area {
-        min-height: 260px;
+        min-height: 0 !important;
+        padding: 28px 0 6px !important;
+        margin: 0 !important;
       }
 
       .hero-image .main-logo {
-        width: 70% !important;
-        max-width: 320px !important;
+        width: 34% !important;
+        max-width: 160px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .hero-copy {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+      }
+
+      .hero-copy .eyebrow {
+        margin-top: 0 !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        gap: 12px !important;
+      }
+
+      .logo-area {
+        padding: 20px 0 0 !important;
+      }
+
+      .hero-image .main-logo {
+        width: 30% !important;
+        max-width: 140px !important;
       }
     }
   </style>
@@ -42,6 +83,7 @@
 <body>
 
 <header class="topbar">
+
   <a class="brand" href="#start">
     Meyfarth<br>
     <span>Gesundheitsprävention</span>
@@ -55,18 +97,24 @@
     <a href="#preise">Formate & Preise</a>
   </nav>
 
-  <a class="btn small" href="#kontakt">Kontakt aufnehmen ↗</a>
+  <a class="btn small" href="#kontakt">
+    Kontakt aufnehmen ↗
+  </a>
+
 </header>
 
 
 <main id="start">
 
   <!-- HERO -->
+
   <section class="hero section">
 
     <div class="hero-copy">
 
-      <p class="eyebrow">WISSEN, DAS IN BEWEGUNG BRINGT</p>
+      <p class="eyebrow">
+        WISSEN, DAS IN BEWEGUNG BRINGT
+      </p>
 
       <h1>
         Gesundheit verstehen.<br>
@@ -74,59 +122,105 @@
       </h1>
 
       <p class="lead">
-        Mit <strong>MoveCode</strong>, dem Programm von Meyfarth-Gesundheitsprävention,
-        bringe ich wissenschaftlich fundiertes Gesundheitswissen in Ihr Unternehmen.
-        Verständliche Vorträge und praktische Workshops für einen bewegten Arbeitsalltag.
+        Mit <strong>MoveCode</strong>, dem Programm von
+        Meyfarth-Gesundheitsprävention, bringe ich wissenschaftlich fundiertes
+        Gesundheitswissen in Ihr Unternehmen. Verständliche Vorträge und
+        praktische Workshops für einen bewegten Arbeitsalltag.
       </p>
 
       <div class="actions">
-        <a class="btn" href="#kontakt">Vortrag anfragen ↗</a>
-        <a class="text-link" href="#angebote">Angebote entdecken ↓</a>
+
+        <a class="btn" href="#kontakt">
+          Vortrag anfragen ↗
+        </a>
+
+        <a class="text-link" href="#angebote">
+          Angebote entdecken ↓
+        </a>
+
       </div>
 
       <div class="nameplate">
-        <strong>Julius Maximus Meyfarth</strong>
-        <span>Physiotherapeut & Referent für Gesundheitsprävention</span>
+
+        <strong>
+          Julius Maximus Meyfarth
+        </strong>
+
+        <span>
+          Physiotherapeut & Referent für Gesundheitsprävention
+        </span>
+
       </div>
 
     </div>
 
+
     <!-- LOGO -->
+
     <div class="hero-image logo-area">
+
       <img
-  src="assets/logo-variationen.png"
-  alt="Meyfarth Gesundheitsprävention Logo"
-  class="main-logo"
->
+        src="assets/logo-variationen.png"
+        alt="Meyfarth Gesundheitsprävention Logo"
+        class="main-logo"
+      >
+
     </div>
 
   </section>
 
 
   <!-- MOVECODE INTRO -->
+
   <section class="dark section compact">
 
     <div>
-      <p class="eyebrow light">FACHWISSEN TRIFFT ALLTAG.</p>
-      <p class="index">01 / MOVECODE</p>
-      <h2>„Mehr als ein Gesundheitsvortrag.“</h2>
+
+      <p class="eyebrow light">
+        FACHWISSEN TRIFFT ALLTAG.
+      </p>
+
+      <p class="index">
+        01 / MOVECODE
+      </p>
+
+      <h2>
+        „Mehr als ein Gesundheitsvortrag.“
+      </h2>
+
     </div>
 
+
     <div class="chips">
-      <span>Gesundheitsimpulse für Unternehmen & Büroteams</span>
-      <span>Fitnessstudios & Vereine</span>
-      <span>Medizinische Teams</span>
+
+      <span>
+        Gesundheitsimpulse für Unternehmen & Büroteams
+      </span>
+
+      <span>
+        Fitnessstudios & Vereine
+      </span>
+
+      <span>
+        Medizinische Teams
+      </span>
+
     </div>
 
   </section>
 
 
   <!-- ANGEBOTE -->
+
   <section id="angebote" class="section">
 
-    <p class="eyebrow">DIE ANGEBOTE</p>
+    <p class="eyebrow">
+      DIE ANGEBOTE
+    </p>
 
-    <h2>Für Menschen. Für ihren Alltag.</h2>
+    <h2>
+      Für Menschen. Für ihren Alltag.
+    </h2>
 
     <p class="intro">
       Jedes Umfeld stellt andere Anforderungen an Gesundheit.
@@ -137,13 +231,20 @@
 
     <div class="cards two">
 
+
       <article class="card">
 
-        <p class="index">01 / UNTERNEHMEN ↗</p>
+        <p class="index">
+          01 / UNTERNEHMEN ↗
+        </p>
 
-        <h3>MoveCode Office</h3>
+        <h3>
+          MoveCode Office
+        </h3>
 
-        <p class="sub">Verstehen. Bewegen. Vorbeugen.</p>
+        <p class="sub">
+          Verstehen. Bewegen. Vorbeugen.
+        </p>
 
         <p>
           Moderne Schmerzaufklärung, Ergonomie und alltagstaugliche Bewegung
@@ -151,9 +252,19 @@
         </p>
 
         <ul>
-          <li>Rücken, Nacken und Schultern im Fokus</li>
-          <li>Bewegungsstrategien direkt am Arbeitsplatz</li>
-          <li>Interaktive Inhalte und praktische Impulse</li>
+
+          <li>
+            Rücken, Nacken und Schultern im Fokus
+          </li>
+
+          <li>
+            Bewegungsstrategien direkt am Arbeitsplatz
+          </li>
+
+          <li>
+            Interaktive Inhalte und praktische Impulse
+          </li>
+
         </ul>
 
         <a class="text-link" href="#preise">
@@ -165,11 +276,17 @@
 
       <article class="card">
 
-        <p class="index">02 / FITNESS & VEREINE ↗</p>
+        <p class="index">
+          02 / FITNESS & VEREINE ↗
+        </p>
 
-        <h3>MoveCode Mobility</h3>
+        <h3>
+          MoveCode Mobility
+        </h3>
 
-        <p class="sub">Mehr Bewegung. Mehr Möglichkeiten.</p>
+        <p class="sub">
+          Mehr Bewegung. Mehr Möglichkeiten.
+        </p>
 
         <p>
           Ein Ganzkörper-Mobility-Programm für Fitnessstudios und Vereine –
@@ -177,9 +294,19 @@
         </p>
 
         <ul>
-          <li>Den eigenen Körper bewusster bewegen</li>
-          <li>Praxisorientiertes Gruppentraining</li>
-          <li>Inhalte passend zu Ihrer Zielgruppe</li>
+
+          <li>
+            Den eigenen Körper bewusster bewegen
+          </li>
+
+          <li>
+            Praxisorientiertes Gruppentraining
+          </li>
+
+          <li>
+            Inhalte passend zu Ihrer Zielgruppe
+          </li>
+
         </ul>
 
         <a class="text-link" href="#kontakt">
@@ -194,11 +321,16 @@
 
 
   <!-- MOVECODE PROGRAMM -->
+
   <section id="movecode" class="section pale">
 
-    <p class="eyebrow">MOVECODE · MEIN PROGRAMM</p>
+    <p class="eyebrow">
+      MOVECODE · MEIN PROGRAMM
+    </p>
 
-    <h2>Verstehen. Bewegen. Verändern.</h2>
+    <h2>
+      Verstehen. Bewegen. Verändern.
+    </h2>
 
     <p class="intro">
       MoveCode ist das Gesundheitsprogramm von Meyfarth-Gesundheitsprävention.
@@ -210,33 +342,57 @@
     <div class="cards three">
 
       <article class="mini">
-        <span>01</span>
-        <h3>Wissenschaftlich fundiert</h3>
+
+        <span>
+          01
+        </span>
+
+        <h3>
+          Wissenschaftlich fundiert
+        </h3>
+
         <p>
           Gesundheitswissen verständlich vermitteln: Wie hängen Bewegung,
           Belastbarkeit und Schmerz zusammen? Welche verbreiteten Vorstellungen
           helfen – und welche verunsichern?
         </p>
+
       </article>
 
 
       <article class="mini">
-        <span>02</span>
-        <h3>Selbstwirksamkeit stärken</h3>
+
+        <span>
+          02
+        </span>
+
+        <h3>
+          Selbstwirksamkeit stärken
+        </h3>
+
         <p>
           Teilnehmende lernen, ihre Handlungsmöglichkeiten zu erkennen und
           Bewegung eigenständig in ihren Alltag einzubauen.
         </p>
+
       </article>
 
 
       <article class="mini">
-        <span>03</span>
-        <h3>Prävention im Alltag verankern</h3>
+
+        <span>
+          03
+        </span>
+
+        <h3>
+          Prävention im Alltag verankern
+        </h3>
+
         <p>
           Individuell passende Bewegungsimpulse, abwechslungsreiche Arbeitspositionen
           und ein bewusster Umgang mit Belastung machen Wissen praktisch nutzbar.
         </p>
+
       </article>
 
     </div>
@@ -245,57 +401,96 @@
 
 
   <!-- NUTZEN -->
+
   <section id="nutzen" class="section">
 
-    <p class="eyebrow">DER NUTZEN FÜR IHR UNTERNEHMEN</p>
+    <p class="eyebrow">
+      DER NUTZEN FÜR IHR UNTERNEHMEN
+    </p>
 
-    <h2>Gesunde Mitarbeitende. Ein starkes Team.</h2>
+    <h2>
+      Gesunde Mitarbeitende. Ein starkes Team.
+    </h2>
 
     <p class="intro">
-      Ein gesundheitsbewusster Arbeitsalltag entsteht durch Wissen und Handlungsmöglichkeiten.
-      MoveCode setzt genau hier an – mit Impulsen, die zu den Anforderungen Ihres Teams passen.
+      Ein gesundheitsbewusster Arbeitsalltag entsteht durch Wissen und
+      Handlungsmöglichkeiten. MoveCode setzt genau hier an – mit Impulsen,
+      die zu den Anforderungen Ihres Teams passen.
     </p>
 
 
     <div class="cards four">
 
+
       <article class="mini">
-        <span>01 / GESUNDHEITSKOMPETENZ</span>
-        <h3>Belastungen besser verstehen</h3>
+
+        <span>
+          01 / GESUNDHEITSKOMPETENZ
+        </span>
+
+        <h3>
+          Belastungen besser verstehen
+        </h3>
+
         <p>
           Mitarbeitende lernen, körperliche Anforderungen bewusster wahrzunehmen
           und Gesundheitsinformationen besser einzuordnen.
         </p>
+
       </article>
 
 
       <article class="mini">
-        <span>02 / ALLTAGSTRANSFER</span>
-        <h3>Aus Wissen wird Bewegung</h3>
+
+        <span>
+          02 / ALLTAGSTRANSFER
+        </span>
+
+        <h3>
+          Aus Wissen wird Bewegung
+        </h3>
+
         <p>
           Praktische Übungen und umsetzbare Bewegungsstrategien geben Ihrem Team
           konkrete Möglichkeiten, den Arbeitsalltag abwechslungsreicher zu gestalten.
         </p>
+
       </article>
 
 
       <article class="mini">
-        <span>03 / LEISTUNGSFÄHIGKEIT</span>
-        <h3>Belastbarkeit gezielt fördern</h3>
+
+        <span>
+          03 / LEISTUNGSFÄHIGKEIT
+        </span>
+
+        <h3>
+          Belastbarkeit gezielt fördern
+        </h3>
+
         <p>
           Das Programm vermittelt, wie angepasste Bewegung und ein sinnvoller
           Umgang mit Belastung die körperliche Leistungsfähigkeit unterstützen können.
         </p>
+
       </article>
 
 
       <article class="mini">
-        <span>04 / UNTERNEHMENSKULTUR</span>
-        <h3>Gesundheit gemeinsam leben</h3>
+
+        <span>
+          04 / UNTERNEHMENSKULTUR
+        </span>
+
+        <h3>
+          Gesundheit gemeinsam leben
+        </h3>
+
         <p>
           Gemeinsame Workshops schaffen Raum für Austausch und Eigenverantwortung.
           Ihr Unternehmen macht Gesundheitsförderung als Teil des Arbeitsalltags sichtbar.
         </p>
+
       </article>
 
     </div>
@@ -311,14 +506,18 @@
 
 
   <!-- ÜBER MICH -->
+
   <section id="ueber-mich" class="section split">
 
+
     <div>
+
       <img
         class="portrait"
         src="assets/portrait.png.JPEG"
         alt="Porträt von Julius Maximus Meyfarth"
       >
+
     </div>
 
 
@@ -343,30 +542,46 @@
 
       <div class="credentials">
 
+
         <div>
-          <strong>01 Physiotherapeutische Ausbildung</strong>
+
+          <strong>
+            01 Physiotherapeutische Ausbildung
+          </strong>
+
           <span>
             Ausbildung an der Ersten Europäischen Schule für Physiotherapie.
           </span>
+
         </div>
 
 
         <div>
-          <strong>02 Neurologische Rehabilitation</strong>
+
+          <strong>
+            02 Neurologische Rehabilitation
+          </strong>
+
           <span>
             Zwei Jahre Erfahrung in der Rehabilitation der Phase B,
             mit Fokus auf Gangrehabilitation und motorische Lernprozesse.
           </span>
+
         </div>
 
 
         <div>
-          <strong>03 Orthesen & Hilfsmittel</strong>
+
+          <strong>
+            03 Orthesen & Hilfsmittel
+          </strong>
+
           <span>
             Fortlaufende Spezialisierung in der neurorehabilitativen Versorgung
             und Mitglied im internen Prothesen-Team der Klinik Bavaria.
             Ergänzend Erfahrung als Sport- und Ernährungscoach im privaten Bereich.
           </span>
+
         </div>
 
       </div>
@@ -377,11 +592,16 @@
 
 
   <!-- PREISE -->
+
   <section id="preise" class="section dark">
 
-    <p class="eyebrow light">MOVECODE OFFICE</p>
+    <p class="eyebrow light">
+      MOVECODE OFFICE
+    </p>
 
-    <h2>Das passende Format. Für Ihr Team.</h2>
+    <h2>
+      Das passende Format. Für Ihr Team.
+    </h2>
 
     <p class="intro lightish">
       Vom kompakten Impuls bis zum Workshop mit Praxisübungen.
@@ -391,14 +611,22 @@
 
     <div class="cards three price-grid">
 
+
       <article class="price">
 
-        <p class="index">STARTER</p>
+        <p class="index">
+          STARTER
+        </p>
 
-        <h3>Der erste Impuls.</h3>
+        <h3>
+          Der erste Impuls.
+        </h3>
 
         <div class="money">
-          50 € <small>pro Mitarbeiter</small>
+          50 €
+          <small>
+            pro Mitarbeiter
+          </small>
         </div>
 
         <div class="duration">
@@ -419,12 +647,19 @@
 
       <article class="price">
 
-        <p class="index">STANDARD</p>
+        <p class="index">
+          STANDARD
+        </p>
 
-        <h3>Wissen im Dialog.</h3>
+        <h3>
+          Wissen im Dialog.
+        </h3>
 
         <div class="money">
-          65 € <small>pro Mitarbeiter</small>
+          65 €
+          <small>
+            pro Mitarbeiter
+          </small>
         </div>
 
         <div class="duration">
@@ -445,12 +680,19 @@
 
       <article class="price">
 
-        <p class="index">PREMIUM</p>
+        <p class="index">
+          PREMIUM
+        </p>
 
-        <h3>Direkt in die Praxis.</h3>
+        <h3>
+          Direkt in die Praxis.
+        </h3>
 
         <div class="money">
-          75 € <small>pro Mitarbeiter</small>
+          75 €
+          <small>
+            pro Mitarbeiter
+          </small>
         </div>
 
         <div class="duration">
@@ -480,6 +722,7 @@
 
 
   <!-- KONTAKT -->
+
   <section id="kontakt" class="section contact">
 
     <p class="eyebrow">
@@ -517,13 +760,17 @@
   </div>
 
   <div>
+
     <a href="mailto:meyfarth74@gmail.com">
       meyfarth74@gmail.com ↗
     </a>
+
     <br>
+
     <a href="tel:+491728232184">
       0172 8232184 ↗
     </a>
+
   </div>
 
   <div>
