@@ -9,23 +9,32 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Zeigt nur die oben linke Logo-Variante aus der 4er-Grafik */
-    .logo-crop {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      position: relative;
-      border-radius: 3px;
+    .logo-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      min-height: 420px;
     }
 
-    .logo-crop img {
-      position: absolute;
-      width: 200%;
-      max-width: none;
-      height: auto;
-      left: 0;
-      top: 0;
-      display: block;
+    .hero-image .main-logo {
+      width: 75% !important;
+      max-width: 430px !important;
+      height: auto !important;
+      object-fit: contain !important;
+      position: static !important;
+      display: block !important;
+    }
+
+    @media (max-width: 900px) {
+      .logo-area {
+        min-height: 260px;
+      }
+
+      .hero-image .main-logo {
+        width: 70% !important;
+        max-width: 320px !important;
+      }
     }
   </style>
 </head>
@@ -65,10 +74,9 @@
       </h1>
 
       <p class="lead">
-        Mit <strong>MoveCode</strong>, dem Programm von
-        Meyfarth-Gesundheitsprävention, bringe ich wissenschaftlich fundiertes
-        Gesundheitswissen in Ihr Unternehmen. Verständliche Vorträge und
-        praktische Workshops für einen bewegten Arbeitsalltag.
+        Mit <strong>MoveCode</strong>, dem Programm von Meyfarth-Gesundheitsprävention,
+        bringe ich wissenschaftlich fundiertes Gesundheitswissen in Ihr Unternehmen.
+        Verständliche Vorträge und praktische Workshops für einen bewegten Arbeitsalltag.
       </p>
 
       <div class="actions">
@@ -83,15 +91,13 @@
 
     </div>
 
-
-    <!-- NUR EINE LOGO-VARIANTE -->
-    <div class="hero-image">
-      <div class="logo-crop">
-        <img
-          src="assets/logo-variationen.png"
-          alt="Meyfarth Gesundheitsprävention Logo"
-        >
-      </div>
+    <!-- LOGO -->
+    <div class="hero-image logo-area">
+      <img
+        src="assets/logo.png"
+        alt="Meyfarth Gesundheitsprävention Logo"
+        class="main-logo"
+      >
     </div>
 
   </section>
@@ -167,8 +173,7 @@
 
         <p>
           Ein Ganzkörper-Mobility-Programm für Fitnessstudios und Vereine –
-          mit angeleiteten Übungen und einem verständlichen Zugang zu
-          Beweglichkeit.
+          mit angeleiteten Übungen und einem verständlichen Zugang zu Beweglichkeit.
         </p>
 
         <ul>
@@ -198,8 +203,7 @@
     <p class="intro">
       MoveCode ist das Gesundheitsprogramm von Meyfarth-Gesundheitsprävention.
       Es verbindet Erkenntnisse aus Physiotherapie, Trainingswissenschaft
-      und Schmerzforschung mit verständlicher Aufklärung und praktischer
-      Bewegung.
+      und Schmerzforschung mit verständlicher Aufklärung und praktischer Bewegung.
     </p>
 
 
@@ -210,8 +214,8 @@
         <h3>Wissenschaftlich fundiert</h3>
         <p>
           Gesundheitswissen verständlich vermitteln: Wie hängen Bewegung,
-          Belastbarkeit und Schmerz zusammen? Welche verbreiteten
-          Vorstellungen helfen – und welche verunsichern?
+          Belastbarkeit und Schmerz zusammen? Welche verbreiteten Vorstellungen
+          helfen – und welche verunsichern?
         </p>
       </article>
 
@@ -230,9 +234,8 @@
         <span>03</span>
         <h3>Prävention im Alltag verankern</h3>
         <p>
-          Individuell passende Bewegungsimpulse, abwechslungsreiche
-          Arbeitspositionen und ein bewusster Umgang mit Belastung machen
-          Wissen praktisch nutzbar.
+          Individuell passende Bewegungsimpulse, abwechslungsreiche Arbeitspositionen
+          und ein bewusster Umgang mit Belastung machen Wissen praktisch nutzbar.
         </p>
       </article>
 
@@ -249,9 +252,8 @@
     <h2>Gesunde Mitarbeitende. Ein starkes Team.</h2>
 
     <p class="intro">
-      Ein gesundheitsbewusster Arbeitsalltag entsteht durch Wissen und
-      Handlungsmöglichkeiten. MoveCode setzt genau hier an – mit Impulsen,
-      die zu den Anforderungen Ihres Teams passen.
+      Ein gesundheitsbewusster Arbeitsalltag entsteht durch Wissen und Handlungsmöglichkeiten.
+      MoveCode setzt genau hier an – mit Impulsen, die zu den Anforderungen Ihres Teams passen.
     </p>
 
 
@@ -261,8 +263,8 @@
         <span>01 / GESUNDHEITSKOMPETENZ</span>
         <h3>Belastungen besser verstehen</h3>
         <p>
-          Mitarbeitende lernen, körperliche Anforderungen bewusster
-          wahrzunehmen und Gesundheitsinformationen besser einzuordnen.
+          Mitarbeitende lernen, körperliche Anforderungen bewusster wahrzunehmen
+          und Gesundheitsinformationen besser einzuordnen.
         </p>
       </article>
 
@@ -271,9 +273,8 @@
         <span>02 / ALLTAGSTRANSFER</span>
         <h3>Aus Wissen wird Bewegung</h3>
         <p>
-          Praktische Übungen und umsetzbare Bewegungsstrategien geben Ihrem
-          Team konkrete Möglichkeiten, den Arbeitsalltag abwechslungsreicher
-          zu gestalten.
+          Praktische Übungen und umsetzbare Bewegungsstrategien geben Ihrem Team
+          konkrete Möglichkeiten, den Arbeitsalltag abwechslungsreicher zu gestalten.
         </p>
       </article>
 
@@ -283,8 +284,7 @@
         <h3>Belastbarkeit gezielt fördern</h3>
         <p>
           Das Programm vermittelt, wie angepasste Bewegung und ein sinnvoller
-          Umgang mit Belastung die körperliche Leistungsfähigkeit
-          unterstützen können.
+          Umgang mit Belastung die körperliche Leistungsfähigkeit unterstützen können.
         </p>
       </article>
 
@@ -293,9 +293,8 @@
         <span>04 / UNTERNEHMENSKULTUR</span>
         <h3>Gesundheit gemeinsam leben</h3>
         <p>
-          Gemeinsame Workshops schaffen Raum für Austausch und
-          Eigenverantwortung. Ihr Unternehmen macht Gesundheitsförderung als
-          Teil des Arbeitsalltags sichtbar.
+          Gemeinsame Workshops schaffen Raum für Austausch und Eigenverantwortung.
+          Ihr Unternehmen macht Gesundheitsförderung als Teil des Arbeitsalltags sichtbar.
         </p>
       </article>
 
@@ -303,10 +302,9 @@
 
 
     <p class="note">
-      Das langfristige Ziel: Wohlbefinden, Motivation und Arbeitsfähigkeit
-      unterstützen und vermeidbaren Beschwerden vorbeugen. Ob sich dadurch
-      Fehlzeiten verringern, hängt auch von Arbeitsbedingungen und der
-      dauerhaften Umsetzung ab.
+      Das langfristige Ziel: Wohlbefinden, Motivation und Arbeitsfähigkeit unterstützen
+      und vermeidbaren Beschwerden vorbeugen. Ob sich dadurch Fehlzeiten verringern,
+      hängt auch von Arbeitsbedingungen und der dauerhaften Umsetzung ab.
     </p>
 
   </section>
@@ -337,10 +335,9 @@
 
       <p>
         Physiotherapeut mit Schwerpunkt in der neurologischen Rehabilitation
-        und Referent für Gesundheitsprävention. In meiner Arbeit erlebe ich
-        täglich, welche Bedeutung Bewegung, Lernen und Vertrauen in den
-        eigenen Körper haben. Diese Perspektive bringe ich in meine Vorträge
-        und Workshops ein.
+        und Referent für Gesundheitsprävention. In meiner Arbeit erlebe ich täglich,
+        welche Bedeutung Bewegung, Lernen und Vertrauen in den eigenen Körper haben.
+        Diese Perspektive bringe ich in meine Vorträge und Workshops ein.
       </p>
 
 
@@ -366,10 +363,9 @@
         <div>
           <strong>03 Orthesen & Hilfsmittel</strong>
           <span>
-            Fortlaufende Spezialisierung in der neurorehabilitativen
-            Versorgung und Mitglied im internen Prothesen-Team der Klinik
-            Bavaria. Ergänzend Erfahrung als Sport- und Ernährungscoach im
-            privaten Bereich.
+            Fortlaufende Spezialisierung in der neurorehabilitativen Versorgung
+            und Mitglied im internen Prothesen-Team der Klinik Bavaria.
+            Ergänzend Erfahrung als Sport- und Ernährungscoach im privaten Bereich.
           </span>
         </div>
 
@@ -436,8 +432,8 @@
         </div>
 
         <p>
-          Vortrag inklusive Fragerunde: Raum für Austausch und die Fragen
-          Ihres Teams.
+          Vortrag inklusive Fragerunde: Raum für Austausch
+          und die Fragen Ihres Teams.
         </p>
 
         <a class="btn ghost" href="#kontakt">
@@ -462,8 +458,8 @@
         </div>
 
         <p>
-          Vertiefender Vortrag inklusive Praxisübungen, die Ihre
-          Mitarbeitenden aktiv einbeziehen.
+          Vertiefender Vortrag inklusive Praxisübungen,
+          die Ihre Mitarbeitenden aktiv einbeziehen.
         </p>
 
         <a class="btn ghost" href="#kontakt">
@@ -496,8 +492,8 @@
 
     <p class="intro">
       Sie planen einen Vortrag, einen Gesundheitstag oder einen Kurs?
-      Schreiben Sie mir gerne, für wen Sie ein Angebot suchen, wie groß Ihr
-      Team ist und welchen Termin Sie sich vorstellen.
+      Schreiben Sie mir gerne, für wen Sie ein Angebot suchen,
+      wie groß Ihr Team ist und welchen Termin Sie sich vorstellen.
     </p>
 
     <a class="btn" href="mailto:meyfarth74@gmail.com">
@@ -524,9 +520,7 @@
     <a href="mailto:meyfarth74@gmail.com">
       meyfarth74@gmail.com ↗
     </a>
-
     <br>
-
     <a href="tel:+491728232184">
       0172 8232184 ↗
     </a>
