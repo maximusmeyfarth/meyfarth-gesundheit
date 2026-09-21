@@ -15,6 +15,19 @@
 
   <style>
     /* ===== DESKTOP HERO LOGO ===== */
+    /* Kleines Logo in der Kopfzeile */
+.brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.Kopfzeilenlogo {
+  width: 46px !important;
+  height: 46px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
 
     .logo-area {
       display: flex;
@@ -72,6 +85,15 @@
         font-size: 9px !important;
         letter-spacing: .15em !important;
       }
+      .topbar .Kopfzeilenlogo {
+    width: 38px !important;
+    height: 38px !important;
+    object-fit: contain !important;
+}
+
+.topbar .brand {
+    gap: 8px !important;
+}
 
       .topbar nav,
       .topbar .btn.small {
@@ -387,6 +409,7 @@
 <header class="topbar">
 
   <a class="brand" href="#start">
+    <img SRC="Vermögenswerte/logo-variationen.png" Alt="Meyfarth Logo" Klasse="Kopfzeilenlogo">
     Meyfarth<br>
     <span>Gesundheitsprävention</span>
   </a>
