@@ -23,16 +23,7 @@
   display: inline;
 }
 
-@media (max-width: 768px) {
-  .mobile-break {
-    display: block;
-  }
 
-  .Kopfzeilenlogo {
-    width: 105px !important;
-    height: 105px !important;
-  }
-}
     /* ===== DESKTOP HERO LOGO ===== */
     /* Kleines Logo in der Kopfzeile */
 .brand {
@@ -48,7 +39,16 @@
   object-fit: contain !important;
   flex-shrink: 0 !important;
 }
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
 
+  .Kopfzeilenlogo {
+    width: 105px !important;
+    height: 105px !important;
+  }
+}
     .logo-area {
       display: flex;
       align-items: center;
