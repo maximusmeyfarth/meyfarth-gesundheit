@@ -14,6 +14,20 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+    /* Überschrift – Zeilenumbrüche */
+.desktop-break {
+  display: block;
+}
+
+.mobile-break {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
+}
     /* ===== DESKTOP HERO LOGO ===== */
     /* Kleines Logo in der Kopfzeile */
 .brand {
@@ -444,7 +458,7 @@
 
 <h1>
   <span class="desktop-break">MOVE CODE</span>
-  Mehr Leistung für Ihr Unternehmen.
+  <span class="desktop-break">Mehr Leistung</span> <span class="mobile-break">für</span> Ihr Unternehmen.
 </h1>
       <p class="lead">
         Mit <strong>MoveCode</strong>, dem Programm von
