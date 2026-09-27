@@ -443,6 +443,112 @@
     }
 }
   </style>
+<style>
+/* ===== MOVE CODE COOKIE BANNER ===== */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: rgba(10, 20, 30, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.cookie-content {
+  width: min(100%, 950px);
+  background: #8fc9e8;
+  border-radius: 22px;
+  padding: 25px 30px;
+  box-shadow: 0 -8px 35px rgba(0, 0, 0, 0.18);
+  color: #10202b;
+}
+
+.cookie-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.cookie-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.cookie-content p {
+  margin: 0 0 18px 0;
+  line-height: 1.55;
+  font-size: 14px;
+  max-width: 760px;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cookie-buttons button {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #10202b;
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cookie-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.cookie-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.cookie-links a {
+  color: #10202b;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .cookie-banner {
+    padding: 12px;
+  }
+
+  .cookie-content {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .cookie-title {
+    font-size: 19px;
+  }
+
+  .cookie-buttons {
+    flex-direction: column;
+  }
+
+  .cookie-buttons button {
+    width: 100%;
+  }
+}
+</style>
+  
 </head>
 
 
@@ -1128,7 +1234,58 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script src="script.js"></script>  
 
+ <!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+<img src="favicon.png.png" alt="MoveCode Logo" class="cookie-logo">
+    <div class="cookie-title">
+      Ihre Privatsphäre. Ihre Entscheidung.
+    </div>
+
+    <p>
+      Wir verwenden Cookies, um unsere Website zuverlässig bereitzustellen
+      und – mit Ihrer Zustimmung – die Nutzung unserer Website zu verbessern.
+    </p>
+
+    <div class="cookie-buttons">
+      <button id="cookie-accept">Alle akzeptieren</button>
+      <button id="cookie-essential">Nur notwendige</button>
+    </div>
+
+    <div class="cookie-links">
+      <a href="datenschutz.html">Datenschutz</a>
+      <span>·</span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+
+  </div>
+</div> 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const acceptButton = document.getElementById("cookie-accept");
+  const essentialButton = document.getElementById("cookie-essential");
+
+  const cookieChoice = localStorage.getItem("movecode-cookie-choice");
+
+  if (cookieChoice) {
+    banner.style.display = "none";
+  }
+
+  acceptButton.addEventListener("click", function () {
+    localStorage.setItem("movecode-cookie-choice", "accepted");
+    banner.style.display = "none";
+  });
+
+  essentialButton.addEventListener("click", function () {
+    localStorage.setItem("movecode-cookie-choice", "essential");
+    banner.style.display = "none";
+  });
+});
+</script>
+  
 </body>
 </html>
